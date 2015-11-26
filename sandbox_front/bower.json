@@ -1,0 +1,24 @@
+{
+  "name": "sandbox_front",
+  "authors": [
+    "Yoshimasa hakone <yoshimasa.hakone@plan-b.co.jp>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "~3.4.0",
+    "bootstrap": "~3.3.6"
+  }
+}

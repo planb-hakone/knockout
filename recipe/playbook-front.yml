@@ -1,0 +1,6 @@
+---
+- hosts: front
+  sudo: yes
+  roles:
+    - base
+    - httpd

@@ -1,0 +1,13 @@
+---
+- name: httpd install
+  yum: name=httpd state=present
+
+- name: copy httpd.conf 
+  copy: src=httpd.conf dest=/etc/httpd/conf/httpd.conf 
+  notify:
+    restart httpd
+
+- name: httpd enabled
+  service: name=httpd state=started enabled=yes
+
+

@@ -1,0 +1,8 @@
+---
+- hosts: server
+  sudo: yes
+  roles:
+    - base
+    - php
+    - mysql
+    - redis
