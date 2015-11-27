@@ -31,6 +31,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     EOT
 
     # set ipaddress & set network
+    node.vm.hostname = "server"
     node.vm.network "private_network", ip: "192.168.33.10"
 
     # set synced folder
@@ -52,7 +53,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     EOT
 
     # set ipaddress & set network
-    config.vm.network "private_network", ip: "192.168.33.11"
+    node.vm.hostname = "front"
+    node.vm.network "private_network", ip: "192.168.33.11"
 
     # set synced folder
     node.vm.synced_folder "sandbox_front", "/vagrant_data", :mount_options => ["dmode=777", "fmode=644"]
