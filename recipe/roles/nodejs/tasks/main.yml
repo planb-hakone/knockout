@@ -1,0 +1,7 @@
+---
+- name: nodejs install
+  yum: name=nodejs
+- name: npm install
+  yum: name=npm
+- name: express install
+  npm: name=express global=yes
